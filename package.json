@@ -1,0 +1,26 @@
+{
+  "name": "generator-game-generic",
+  "version": "1.0.0",
+  "description": "A game development project structure",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skerwe/generator-game-generic.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "game-dev"
+  ],
+  "author": "Quintin Henn <quintin.henn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skerwe/generator-game-generic/issues"
+  },
+  "homepage": "https://github.com/Skerwe/generator-game-generic#readme",
+  "dependencies": {
+    "yeoman-generator": "^3.2.0"
+  }
+}
