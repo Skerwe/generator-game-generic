@@ -15,7 +15,7 @@ module.exports = class extends Generator {
     this.log('Generating project file structure');
 
     this.fs.copy(
-      this.templatePath('**'),
+      this.templatePath('**/**'),
       this.destinationPath(this.options.appname),
       { onlyFiles: false, deep: true, dot: true }
     );
@@ -28,9 +28,21 @@ module.exports = class extends Generator {
     this.log('Copying miscellaneous files');
 
     this.fs.copy(
-      this.templatePath('.**'),
+      this.templatePath('**/.**'),
       this.destinationPath(this.options.appname),
       { onlyFiles: false, deep: true, dot: true }
+    );
+
+    done();
+  }
+
+  deleteDotKeepFiles() {
+    var done = this.async();
+    this.log('Deleting .gitkeep files');
+
+    this.fs.delete(
+      this.destinationPath(this.options.appname + '/**/.**'),
+      { onlyFiles: true, deep: true, dot: true }
     );
 
     done();
