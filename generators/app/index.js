@@ -46,10 +46,6 @@ module.exports = class extends Generator {
     );
   }
 
-  // install() {
-  //   this.installDependencies();
-  // }
-
   end() {
 
     this.options.onlyFiles = true;
