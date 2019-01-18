@@ -12,7 +12,7 @@ module.exports = class extends Generator {
         Welcome to the kryptonian ${chalk.red(
           "generator-game-generic"
         )} generator!`)
-      );
+    );
 
     const prompts = [
       {
