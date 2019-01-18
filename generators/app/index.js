@@ -10,9 +10,9 @@ module.exports = class extends Generator {
     this.log(
       yosay(`
         Welcome to the kryptonian ${chalk.red(
-                  "generator-game-generic"
-                )} generator!`)
-            );
+          "generator-game-generic"
+        )} generator!`)
+      );
 
     const prompts = [
       {
@@ -61,8 +61,8 @@ module.exports = class extends Generator {
 
     this.log(`
       Project ${chalk.red(
-              this.props.appname
-            )} completed. Thank you for using this generator. Good bye :)
+        this.props.appname
+      )} completed. Thank you for using this generator. Good bye :)
     `);
   }
 };
