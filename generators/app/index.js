@@ -8,8 +8,11 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome to the kryptonian ${chalk.red("generator-game-generic")} generator!`)
-    );
+      yosay(`
+        Welcome to the kryptonian ${chalk.red(
+                  "generator-game-generic"
+                )} generator!`)
+            );
 
     const prompts = [
       {
@@ -47,7 +50,6 @@ module.exports = class extends Generator {
   }
 
   end() {
-
     this.options.onlyFiles = true;
     this.options.deep = true;
     this.options.dot = true;
@@ -57,7 +59,10 @@ module.exports = class extends Generator {
       this.options
     );
 
-    this.log(`Project ${chalk.red(this.props.appname)} completed. Thank you for using this generator. Good bye :)`);
+    this.log(`
+      Project ${chalk.red(
+              this.props.appname
+            )} completed. Thank you for using this generator. Good bye :)
+    `);
   }
-
 };
