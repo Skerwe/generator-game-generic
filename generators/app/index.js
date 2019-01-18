@@ -1,51 +1,67 @@
 'use strict';
 
-var Generator = require('yeoman-generator');
+const Generator = require('yeoman-generator');
+const chalk = require('chalk');
+const yosay = require('yosay');
 
 module.exports = class extends Generator {
-
-  constructor(args, opts) {
-    super(args, opts);
-
-    this.argument('appname', { type: String, required: true });
-  }
-
-  createFolderStructure() {
-    var done = this.async();
-    this.log('Generating project file structure');
-
-    this.fs.copy(
-      this.templatePath('**/**'),
-      this.destinationPath(this.options.appname),
-      { onlyFiles: false, deep: true, dot: true }
+  prompting() {
+    // Have Yeoman greet the user.
+    this.log(
+      yosay(`Welcome to the kryptonian ${chalk.red('generator-game-generic')} generator!`)
     );
 
-    done();
+    const prompts = [
+      {
+        type: 'input',
+        name: 'appname',
+        message: 'What is the project name?',
+        default: 'generic-game'
+      }
+    ];
+
+    return this.prompt(prompts).then(props => {
+      // To access props later use this.props.appname;
+      this.props = props;
+    });
   }
 
-  copyMiscFiles() {
-    var done = this.async();
-    this.log('Copying miscellaneous files');
+  writing() {
+    this.log('Generating project structure ...');
+
+    this.options.onlyFiles = false;
+    this.options.deep = true;
+    this.options.dot = true;
 
     this.fs.copy(
-      this.templatePath('**/.**'),
-      this.destinationPath(this.options.appname),
-      { onlyFiles: false, deep: true, dot: true }
+      this.templatePath(),
+      this.destinationPath(this.props.appname),
+      this.options
     );
 
-    done();
+    this.fs.copy(
+      this.templatePath('**/.*'),
+      this.destinationPath(this.props.appname),
+      this.options
+    );
   }
 
-  deleteDotKeepFiles() {
-    var done = this.async();
-    this.log('Deleting .gitkeep files');
+  // install() {
+  //   this.installDependencies();
+  // }
+
+  end() {
+
+    this.options.onlyFiles = true;
+    this.options.deep = true;
+    this.options.dot = true;
 
     this.fs.delete(
-      this.destinationPath(this.options.appname + '/**/.**'),
-      { onlyFiles: true, deep: true, dot: true }
+      this.destinationPath(this.props.appname + '/**/.*'),
+      this.options
     );
 
-    done();
+    this.log(`Project ${chalk.red(this.props.appname)} completed. Thank you for using this generator. Good bye :)`);
   }
 
 };
