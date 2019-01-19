@@ -6,9 +6,9 @@ const helpers = require("yeoman-test");
 
 describe("generator-game-generic:app", () => {
   beforeAll(() => {
-    return helpers
-      .run(path.join(__dirname, "../generators/app"))
-      .withPrompts({ appname: "dummy-game" });
+    return helpers.run(path.join(__dirname, "../generators/app")).withPrompts({
+      appname: "dummy-game"
+    });
   });
 
   it("creates files", () => {
