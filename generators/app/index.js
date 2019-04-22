@@ -5,14 +5,23 @@ const chalk = require("chalk");
 const yosay = require("yosay");
 
 module.exports = class extends Generator {
+  constructor(args, opts) {
+    super(args, opts);
+
+    this.argument("appname", { type: String, required: false });
+  }
+
   prompting() {
-    // Have Yeoman greet the user.
     this.log(
       yosay(`
-        Welcome to the kryptonian ${chalk.red(
-          "generator-game-generic"
-        )} generator!`)
+        Welcome to the ${chalk.blue("indie")} ${chalk.red(
+        "game project folder"
+      )} generator!`)
     );
+
+    if (this.options.appname) {
+      return;
+    }
 
     const prompts = [
       {
@@ -24,44 +33,34 @@ module.exports = class extends Generator {
     ];
 
     return this.prompt(prompts).then(props => {
-      // To access props later use this.props.appname;
-      this.props = props;
+      this.options.appname = props.appname;
     });
   }
 
   writing() {
     this.log("Generating project structure ...");
 
-    this.options.onlyFiles = false;
-    this.options.deep = true;
-    this.options.dot = true;
-
     this.fs.copy(
-      this.templatePath(),
-      this.destinationPath(this.props.appname),
-      this.options
+      this.templatePath("**/.*"),
+      this.destinationPath(this.options.appname),
+      {
+        onlyFiles: false,
+        deep: true,
+        dot: false,
+        unique: true
+      }
     );
 
     this.fs.copy(
-      this.templatePath("**/.*"),
-      this.destinationPath(this.props.appname),
-      this.options
+      this.templatePath(),
+      this.destinationPath(this.options.appname)
     );
   }
 
   end() {
-    this.options.onlyFiles = true;
-    this.options.deep = true;
-    this.options.dot = true;
-
-    this.fs.delete(
-      this.destinationPath(this.props.appname + "/**/.*"),
-      this.options
-    );
-
     this.log(`
       Project ${chalk.red(
-        this.props.appname
+        this.options.appname
       )} completed. Thank you for using this generator. Good bye :)
     `);
   }

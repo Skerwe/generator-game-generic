@@ -3,7 +3,6 @@
 const path = require("path");
 const assert = require("yeoman-assert");
 const helpers = require("yeoman-test");
-const rimraf = require("rimraf");
 
 describe("generator-game-generic:app", () => {
   const componentName = "dummy-game";
@@ -13,11 +12,12 @@ describe("generator-game-generic:app", () => {
       .withPrompts({ appname: componentName });
   });
 
-  afterAll(() => {
-    rimraf.sync(path.join(__dirname, componentName));
-  });
-
-  it("creates files", () => {
+  it("created files and folder structure", () => {
     assert.file(`${componentName}/README.md`);
+    assert.file(`${componentName}/.editorconfig`);
+    assert.file(`${componentName}/VERSION`);
+    assert.file(`${componentName}/Assets/`);
+    assert.file(`${componentName}/Source/.gitkeep`);
+    assert.file(`${componentName}/Game/HTML5-Website/.gitkeep`);
   });
 });
