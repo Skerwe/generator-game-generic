@@ -1,19 +1,29 @@
-# Generic Game
+# Game Development Project Structure
 
-A game project folder struction
+## About
 
-## Assets
+Game development project folder structure
 
-All art assets, sounds and music files
+* Assets - all art assets, sounds and music files
+* Docs - project documentation and manual
+* Game - playable demo, tests builds and final distribution
+* Source - the game source code
 
-## Docs
+### .editorconfig
 
-Documentstion
+The `.editorconfig` file encourage and help to maintain consistent coding styles between different
+editors and IDEs. For more details, please refer to the [EditorConfig
+project](http://editorconfig.org/).
 
-## Game
+### .gitignore
 
-Distibution files.
+Comprehensive set of ignores on GitHub: [https://github.com/github/gitignore](https://github.com/github/gitignore)
 
-## Source
+### LICENCE
 
-Source files
+An open source license protects contributors and users. Businesses and savvy developers won’t touch a project without this protection.
+[Choose a license](https://choosealicense.com/) for your project.
+
+### VERSION
+
+Learn about [Semantic Versioning](https://semver.org/) and how to use it in your project.
