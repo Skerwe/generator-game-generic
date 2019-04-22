@@ -16,6 +16,12 @@ Then generate your new project:
 yo game-generic
 ```
 
+or
+
+```bash
+yo game-generic my-game-codename
+```
+
 ## Getting To Know Yeoman
 
 * Yeoman has a heart of gold.
