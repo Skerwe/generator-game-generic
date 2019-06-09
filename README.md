@@ -1,5 +1,30 @@
 # generator-game-generic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
 > A game development project structure
+
+```folders
+.
+├── Assets/
+├── Docs/
+├── Game/
+│   ├── Amazon-Appstore/
+│   ├── BlackBerry10/
+│   ├── Chrome-Web-Store/
+│   ├── Cordova/
+│   ├── HTML5-Website/
+│   ├── Kongregate/
+│   ├── NWjs/
+│   ├── Scirra-Arcade/
+│   └── Windows-Store/
+├── Source/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── README.md
+├── UNLICENSE
+└── VERSION
+
+```
 
 ## Installation
 
