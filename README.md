@@ -60,8 +60,8 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 
 [npm-image]: https://badge.fury.io/js/generator-game-generic.svg
 [npm-url]: https://npmjs.org/package/generator-game-generic
-[travis-image]: https://travis-ci.org/Skerwe/generator-game-generic.svg?branch=master
-[travis-url]: https://travis-ci.org/Skerwe/generator-game-generic
+[travis-image]: https://travis-ci.com/Skerwe/generator-game-generic.svg?branch=master
+[travis-url]: https://travis-ci.com/Skerwe/generator-game-generic
 [daviddm-image]: https://david-dm.org/Skerwe/generator-game-generic.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/Skerwe/generator-game-generic
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-game-generic/badge.svg
