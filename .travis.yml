@@ -3,5 +3,4 @@ node_js:
   - v11
   - v10
   - v8
-  - v6
 after_script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage

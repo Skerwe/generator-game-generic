@@ -1,6 +1,6 @@
 {
   "name": "generator-game-generic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A game development project structure generator",
   "homepage": "https://github.com/Skerwe/generator-game-generic#readme",
   "author": {
@@ -76,5 +76,8 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "jest"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
