@@ -1,5 +1,7 @@
 # generator-game-generic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Skerwe/generator-game-generic.svg)](https://greenkeeper.io/)
+
 > A game development project structure
 
 ```folders
