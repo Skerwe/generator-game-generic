@@ -1,6 +1,6 @@
 # generator-game-generic
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge](https://badges.greenkeeper.io/Skerwe/generator-game-generic.svg)](https://greenkeeper.io/)
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 > A game development project structure
 
@@ -68,3 +68,5 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 [daviddm-url]: https://david-dm.org/Skerwe/generator-game-generic
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-game-generic/badge.svg
 [coveralls-url]: https://coveralls.io/r/Skerwe/generator-game-generic
+[greenkeeper-image]: https://badges.greenkeeper.io/Skerwe/generator-game-generic.svg
+[greenkeeper-url]: https://greenkeeper.io/
