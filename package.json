@@ -75,7 +75,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "test": "jest --testPathIgnorePatterns app/templates/*"
   },
   "engines": {
     "node": ">=8.0.0"
