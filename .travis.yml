@@ -1,14 +1,13 @@
 language: node_js
 node_js:
-- v12
-- v10
-- v8
+  - "12"
 after_script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   && rm -rf ./coverage
 deploy:
   provider: npm
   email: $NPM_EMAIL
-  api_key: $NPM_TOKEN
+  api_key:
+    secure: $NPM_TOKEN
   on:
     tags: true
     repo: Skerwe/generator-game-generic
