@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "yeoman-generator": "^4.5.0",
+    "yeoman-generator": "^4.7.2",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
@@ -40,10 +40,10 @@
     "eslint-utils": "^2.0.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "lint-staged": "^10.0.7",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^2.1.0"
+    "yeoman-test": "^2.3.0"
   },
   "jest": {
     "testEnvironment": "node"
