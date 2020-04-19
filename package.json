@@ -47,7 +47,9 @@
     "yeoman-test": "^2.3.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage"
   },
   "lint-staged": {
     "*.js": [
@@ -77,9 +79,9 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "snyk test && jest --testPathIgnorePatterns app/templates/*"
+    "test": "snyk test && jest"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   }
 }
