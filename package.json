@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "acorn": "^7.1.1",
-    "coveralls": "^3.0.9",
+    "coveralls": "^3.0.11",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-xo": "^0.29.1",
@@ -42,7 +42,7 @@
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
-    "snyk": "^1.299.0",
+    "snyk": "^1.305.1",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.3.0"
   },
