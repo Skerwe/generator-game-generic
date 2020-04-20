@@ -49,7 +49,14 @@
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
-    "coverageDirectory": "coverage"
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/generators/app/templates/*"
+    ]
   },
   "lint-staged": {
     "*.js": [
@@ -80,8 +87,5 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "snyk test && jest"
-  },
-  "engines": {
-    "node": ">=10.0.0"
   }
 }
