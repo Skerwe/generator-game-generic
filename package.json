@@ -54,8 +54,7 @@
       "/node_modules/"
     ],
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/generators/app/templates/*"
+      "/node_modules/"
     ]
   },
   "lint-staged": {
