@@ -68,5 +68,5 @@ MIT © [Quintin Henn](http://skerwe.web.za)
 [daviddm-url]: https://david-dm.org/Skerwe/generator-game-generic
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-game-generic/badge.svg
 [coveralls-url]: https://coveralls.io/r/Skerwe/generator-game-generic
-[snyk-image]: https://snyk.io/test/github/Skerwe/generator-game-generic/badge.svg?targetFile=package.json
-[snyk-url]: https://snyk.io/test/github/Skerwe/generator-game-generic?targetFile=package.json
+[snyk-image]: https://snyk.io/test/github/Skerwe/generator-game-generic/badge.svg
+[snyk-url]: https://snyk.io/test/github/Skerwe/generator-game-generic
