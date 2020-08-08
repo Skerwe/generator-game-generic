@@ -32,7 +32,7 @@
     "snyk": "^1.361.3"
   },
   "devDependencies": {
-    "acorn": "^7.1.1",
+    "acorn": "^7.4.0",
     "coveralls": "^3.0.11",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
@@ -40,14 +40,14 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-utils": "^2.0.0",
     "husky": "^4.2.3",
-    "jest": "^25.1.0",
+    "jest": "^25.5.4",
     "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^2.3.0"
+    "yeoman-test": "^2.7.0"
   },
   "jest": {
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "collectCoverage": true,
     "coverageDirectory": "coverage",
     "coveragePathIgnorePatterns": [
@@ -85,7 +85,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "snyk test && jest",
+    "test": "jest",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
