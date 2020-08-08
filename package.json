@@ -27,12 +27,13 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
+    "snyk": "^1.370.1",
     "yeoman-generator": "^4.11.0",
-    "yosay": "^2.0.2",
-    "snyk": "^1.361.3"
+    "yosay": "^2.0.2"
   },
   "devDependencies": {
     "acorn": "^7.4.0",
+    "ajv": "^6.12.3",
     "coveralls": "^3.0.11",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
@@ -42,6 +43,7 @@
     "husky": "^4.2.3",
     "jest": "^25.5.4",
     "lint-staged": "^10.0.8",
+    "lodash": ">=4.17.19",
     "prettier": "^1.19.1",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.7.0"
@@ -85,7 +87,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest",
+    "test": "snyk test && jest",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
