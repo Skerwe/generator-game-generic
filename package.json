@@ -44,7 +44,7 @@
     "lint-staged": "^10.3.0",
     "lodash": ">=4.17.19",
     "prettier": "^1.19.1",
-    "snyk": "^1.397.1",
+    "snyk": "^1.398.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.7.0"
   },
