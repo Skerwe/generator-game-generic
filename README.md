@@ -9,15 +9,15 @@
 ├── assets/
 ├── docs/
 ├── game/
-│   ├── Amazon-Appstore/
-│   ├── BlackBerry10/
-│   ├── Chrome-Web-Store/
-│   ├── Cordova/
-│   ├── HTML5-Website/
-│   ├── Kongregate/
-│   ├── NWjs/
-│   ├── Scirra-Arcade/
-│   └── Windows-Store/
+│   ├── amazon-appstore/
+│   ├── chrome-web-store/
+│   ├── cordova/
+│   ├── html5-Website/
+│   ├── kongregate/
+│   ├── linux/
+│   ├── nwjs/
+│   ├── scirra-arcade/
+│   └── windows/
 ├── source/
 ├── .editorconfig
 ├── .gitattributes
@@ -54,6 +54,10 @@ yo game-generic my-game-codename
 - Yeoman is a person with feelings and opinions, but is very easy to work with.
 - Yeoman can be too opinionated at times but is easily convinced not to be.
 - Feel free to [learn more about Yeoman](http://yeoman.io/).
+
+## Game Engine Configuration
+
+After creating a game project you will need to [configure version control for Unity and the Unreal Engine](source/README.md)
 
 ## License
 
