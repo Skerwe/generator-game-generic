@@ -85,6 +85,5 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "jest"
-  },
-  "snyk": true
+  }
 }
