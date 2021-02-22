@@ -49,7 +49,7 @@
     "npm": ">= 4.0.0"
   },
   "jest": {
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "collectCoverage": true,
     "coverageDirectory": "coverage",
     "coveragePathIgnorePatterns": [
@@ -82,7 +82,8 @@
     ],
     "env": {
       "jest": true,
-      "node": true
+      "node": true,
+      "jsdom": true
     },
     "rules": {
       "prettier/prettier": "error"
