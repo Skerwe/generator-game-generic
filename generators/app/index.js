@@ -32,7 +32,7 @@ module.exports = class extends Generator {
       }
     ];
 
-    return this.prompt(prompts).then((props) => {
+    return this.prompt(prompts).then(props => {
       this.options.appname = props.appname;
     });
   }
@@ -55,6 +55,10 @@ module.exports = class extends Generator {
       this.templatePath(),
       this.destinationPath(this.options.appname)
     );
+  }
+
+  install() {
+    this.installDependencies();
   }
 
   end() {

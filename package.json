@@ -11,12 +11,14 @@
   "files": [
     "generators"
   ],
-  "main": "generators/app/index.js",
+  "main": "generators/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Skerwe/generator-game-generic.git"
   },
   "keywords": [
+    "game-project",
+    "folder-structure",
     "yeoman-generator",
     "game-development",
     "template"
@@ -26,39 +28,28 @@
     "url": "https://github.com/Skerwe/generator-game-generic/issues"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "yeoman-generator": "^4.12.0",
-    "yosay": "^2.0.2"
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
   },
   "devDependencies": {
-    "acorn": "^6.4.2",
-    "ajv": "^6.12.6",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-config-xo": "^0.32.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-utils": "^2.1.0",
-    "husky": "^4.3.0",
-    "jest": "^26.5.2",
-    "lint-staged": "^10.4.0",
-    "lodash": ">=4.17.19",
-    "prettier": "^2.1.2",
-    "snyk": "^1.413.2",
-    "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^3.0.0"
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "coveralls": "^3.0.7",
+    "eslint": "^6.6.0",
+    "prettier": "^1.19.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "eslint-config-prettier": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-config-xo": "^0.27.2",
+    "jest": "^26.1.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
   },
   "jest": {
-    "testEnvironment": "jsdom",
-    "collectCoverage": true,
-    "coverageDirectory": "coverage",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/generators/app/templates/*"
-    ]
+    "testEnvironment": "node"
   },
   "lint-staged": {
     "*.js": [
@@ -69,6 +60,11 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -88,9 +84,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "snyk test && jest",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "test": "jest"
   },
   "snyk": true
 }
