@@ -49,7 +49,16 @@
     "npm": ">= 4.0.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/generators/app/templates/*"
+    ]
   },
   "lint-staged": {
     "*.js": [
