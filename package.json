@@ -28,7 +28,7 @@
     "url": "https://github.com/Skerwe/generator-game-generic/issues"
   },
   "dependencies": {
-    "yeoman-generator": "^4.11.0",
+    "yeoman-generator": "^5.0.0",
     "chalk": "^3.0.0",
     "yosay": "^2.0.2"
   },
