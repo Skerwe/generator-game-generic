@@ -4,9 +4,8 @@
 # Source code
 *.xml             text
 *.scml            text
-*.caproj          text
+*.c3proj          text
 *.json            text
-*.scon            text
 
 # Documentation
 *.md              text diff=markdown
