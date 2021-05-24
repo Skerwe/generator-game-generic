@@ -21,7 +21,7 @@ describe("generator game: prompting for appname", () => {
   it("created base project files", () => {
     assert.file([
       `${tempPath}/${componentName}/README.md`,
-      `${tempPath}/${componentName}/LICENSE.md`
+      `${tempPath}/${componentName}/UNLICENSE`
     ]);
   });
 
@@ -38,9 +38,7 @@ describe("generator game: prompting for appname", () => {
       `${tempPath}/${componentName}/assets/README.md`,
       `${tempPath}/${componentName}/docs/README.md`,
       `${tempPath}/${componentName}/game/Cordova/README.md`,
-      `${tempPath}/${componentName}/game/HTML5-Website/README.md`,
-      `${tempPath}/${componentName}/game/NWjs/README.md`,
-      `${tempPath}/${componentName}/game/Scirra-Arcade/README.md`,
+      `${tempPath}/${componentName}/game/README.md`,
       `${tempPath}/${componentName}/source/README.md`
     ]);
   });
@@ -76,10 +74,7 @@ describe("generator game: give appname through arguments", () => {
     assert.file([
       `${tempPath}/${componentName}/assets/README.md`,
       `${tempPath}/${componentName}/docs/README.md`,
-      `${tempPath}/${componentName}/game/Cordova/README.md`,
-      `${tempPath}/${componentName}/game/HTML5-Website/README.md`,
-      `${tempPath}/${componentName}/game/NWjs/README.md`,
-      `${tempPath}/${componentName}/game/Scirra-Arcade/README.md`,
+      `${tempPath}/${componentName}/game/README.md`,
       `${tempPath}/${componentName}/source/README.md`
     ]);
   });
