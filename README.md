@@ -16,7 +16,6 @@
 ├── game/
 │   ├── cordova/
 │   ├── html5/
-│   ├── kongregate/
 │   ├── linux/
 │   ├── nwjs/
 │   ├── scirra-arcade/
