@@ -14,10 +14,10 @@ Root folders should be further divided to fit your project needs. Each folder co
 ```folders
 .
 └── <Project-Codename>/
-  ├── assets
-  ├── docs
-  ├── game
-  └── source
+    ├── assets
+    ├── docs
+    ├── game
+    └── source
 ```
 
 ### .editorconfig

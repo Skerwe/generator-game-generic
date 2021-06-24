@@ -7,11 +7,11 @@ Create sub folders for each type of resource.
 ```folders
 .
 └── assets/
-  ├── concept-art
-  ├── music
-  ├── sounds
-  ├── sprites
-  └── models
+    ├── concept-art
+    ├── music
+    ├── sounds
+    ├── sprites
+    └── models
 ```
 
 ## Blender model files
@@ -23,7 +23,7 @@ Rename `blender.gitattributes` and `blender.gitignore` to `.gitattributes` and `
 ```folders
 .
 └── assets/
-  └── models/
-    ├── .gitattributes
-    └── .gitignore
+    └── models/
+        ├── .gitattributes
+        └── .gitignore
 ```

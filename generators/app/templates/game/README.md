@@ -5,12 +5,12 @@ This is where you will build/export your game distribution for all your targeted
 ```folders
 .
 └── game/
-  ├── demo (working demo to send to reviewers / publishers)
-  ├── daily (daily build for testers)
-  ├── alfa (internal release)
-  ├── beta (controlled public release)
-  └── gold (final public release)
-    ├── windows
-    ├── linux
-    └── html5
+    ├── demo (working demo to send to reviewers / publishers)
+    ├── daily (daily build for testers)
+    ├── alfa (internal release)
+    ├── beta (controlled public release)
+    └── gold (final public release)
+        ├── windows
+        ├── linux
+        └── html5
 ```
