@@ -86,6 +86,6 @@
   "scripts": {
     "pretest": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "jest"
+    "test": "jest --coverage"
   }
 }
