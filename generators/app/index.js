@@ -32,7 +32,7 @@ module.exports = class extends Generator {
       }
     ];
 
-    return this.prompt(prompts).then(props => {
+    return this.prompt(prompts).then((props) => {
       this.options.appname = props.appname;
     });
   }

@@ -8,15 +8,15 @@ describe("generator game: prompting for appname", () => {
   const componentName = "dummy-game";
   let tempPath;
 
-  beforeAll(done => {
-    return helpers
+  beforeAll((done) =>
+    helpers
       .run(path.join(__dirname, "../generators/app"))
       .withPrompts({ appname: componentName })
       .on("end", done)
-      .then(result => {
+      .then((result) => {
         tempPath = result;
-      });
-  });
+      })
+  );
 
   it("created base project files", () => {
     assert.file([
@@ -48,15 +48,15 @@ describe("generator game: give appname through arguments", () => {
   const componentName = "dummy-game";
   let tempPath;
 
-  beforeAll(done => {
-    return helpers
+  beforeAll((done) =>
+    helpers
       .run(path.join(__dirname, "../generators/app"))
       .withArguments(componentName)
       .on("end", done)
-      .then(result => {
+      .then((result) => {
         tempPath = result;
-      });
-  });
+      })
+  );
 
   it("created base project files", () => {
     assert.file([`${tempPath}/${componentName}/README.md`]);
