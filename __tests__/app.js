@@ -37,7 +37,7 @@ describe("generator game: prompting for appname", () => {
     assert.file([
       `${tempPath}/${componentName}/assets/README.md`,
       `${tempPath}/${componentName}/docs/README.md`,
-      `${tempPath}/${componentName}/game/Cordova/README.md`,
+      `${tempPath}/${componentName}/game/html5/README.md`,
       `${tempPath}/${componentName}/game/README.md`,
       `${tempPath}/${componentName}/source/README.md`
     ]);

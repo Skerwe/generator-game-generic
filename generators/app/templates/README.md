@@ -1,13 +1,24 @@
 # Game Development Project Structure
 
+The basic structure for a game development project. These folders organize the project in a logical structure based on resource type.
+
 ## About
 
-Folders for a game development project.
+Root folders should be further divided to fit your project needs. Each folder contains examples on how it can be structured.
 
 - Assets - all art assets, sounds and music files
 - Docs - project documentation and manual
 - Game - playable demo, tests builds and final distribution
 - Source - the game source code
+
+```folders
+.
+└── <Project-Codename>/
+  ├── assets
+  ├── docs
+  ├── game
+  └── source
+```
 
 ### .editorconfig
 
@@ -16,6 +27,11 @@ The `.editorconfig` file encourage and help to maintain consistent coding styles
 ### .gitignore
 
 Comprehensive set of ignores on GitHub: [https://github.com/github/gitignore](https://github.com/github/gitignore)
+
+### Versioning large files
+
+Large files such as audio, videos, graphics, and binary files doesn't change as often as the game source code files.  
+Use [Git Large File Storage](https://git-lfs.github.com/)(LFS) to version these files.
 
 ### LICENCE
 
