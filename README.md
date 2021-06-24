@@ -46,18 +46,16 @@ or
 yo game-generic my-game-codename
 ```
 
-## Versioning Configuration
+## Versioning configuration
 
 After creating your game project folder structure, you will need to [configure version control for your preferred game engine or framework](generators/app/templates/source/README.md)
 
 Currently included are `.gitignore` and `.gitattribute` files for **Unity**, **Unreal Engine** and **Construct 2/3**.
 
-## Getting To Know Yeoman
+## This project was built with
 
-* Yeoman has a heart of gold.
-* Yeoman is a person with feelings and opinions, but is very easy to work with.
-* Yeoman can be too opinionated at times but is easily convinced not to be.
-* Feel free to [learn more about Yeoman](http://yeoman.io/).
+* [Yeoman](http://yeoman.io/): The web's scaffolding tool
+* [Game Development Project Structure](https://bitbucket.org/indiesagtewerke/codename-project-structure/src/master/)
 
 ## License
 
