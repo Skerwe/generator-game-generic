@@ -1,6 +1,6 @@
 # Game Development Project Structure
 
-The basic structure for a game development project. These folders organize the project in a logical structure based on resource type.
+A practical folder structure for your next game development project. These folders organize your game project in a logical structure based on resource type.
 
 ## About
 

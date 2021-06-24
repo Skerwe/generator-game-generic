@@ -1,18 +1,16 @@
-# generator-game-generic
+# Generic Game Folder Structure Generator
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Known Vulnerabilities][snyk-image]][snyk-url]
 
-> A game development project structure
+> A practical folder structure for your next game development project. These folders organize your game project in a logical structure based on resource type.
 
 ```folders
 .
 ├── assets/
 ├── docs/
 ├── game/
-│   ├── amazon-appstore/
-│   ├── chrome-web-store/
 │   ├── cordova/
-│   ├── html5-Website/
+│   ├── html5/
 │   ├── kongregate/
 │   ├── linux/
 │   ├── nwjs/
@@ -23,7 +21,7 @@
 ├── .gitattributes
 ├── .gitignore
 ├── README.md
-└── LICENSE.md
+└── LICENSE
 
 ```
 
@@ -48,16 +46,18 @@ or
 yo game-generic my-game-codename
 ```
 
+## Versioning Configuration
+
+After creating your game project folder structure, you will need to [configure version control for your preferred game engine or framework](generators/app/templates/source/README.md)
+
+Currently included are `.gitignore` and `.gitattribute` files for **Unity**, **Unreal Engine** and **Construct 2/3**.
+
 ## Getting To Know Yeoman
 
 * Yeoman has a heart of gold.
 * Yeoman is a person with feelings and opinions, but is very easy to work with.
 * Yeoman can be too opinionated at times but is easily convinced not to be.
 * Feel free to [learn more about Yeoman](http://yeoman.io/).
-
-## Game Engine Configuration
-
-After creating a game project you will need to [configure version control for Unity and the Unreal Engine](source/README.md)
 
 ## License
 
