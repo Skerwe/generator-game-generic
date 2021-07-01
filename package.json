@@ -29,34 +29,45 @@
   },
   "dependencies": {
     "chalk": "^4.1.1",
+    "yeoman-generator": "^4.13.0",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "coveralls": "^3.0.11",
+    "coveralls": "^3.1.1",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-xo": "^0.37.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
+    "husky": "^7.0.0",
     "jest": "^26.1.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "yeoman-assert": "^3.1.1",
-    "yeoman-generator": "^4.13.0",
     "yeoman-test": "^2.7.0"
   },
   "engines": {
     "npm": ">= 4.0.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/generators/app/templates/*"
+    ]
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix"
+      "eslint --fix",
+      "git add"
     ],
     "*.json": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   },
   "husky": {
