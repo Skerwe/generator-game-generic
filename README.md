@@ -62,7 +62,7 @@ Currently included are `.gitignore` and `.gitattribute` files for **Unity**, **U
 
 ## License
 
-MIT © [Quintin Henn](http://skerwe.web.za)
+This project is licensed under the MIT License -- see the [LICENSE](LICENSE) file for details
 
 [npm-image]: https://badge.fury.io/js/generator-game-generic.svg
 [npm-url]: https://npmjs.org/package/generator-game-generic

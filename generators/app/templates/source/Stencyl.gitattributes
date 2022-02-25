@@ -1,0 +1,19 @@
+* text=auto
+
+## GRAPHICS
+*.bmp  binary
+*.gif  binary
+*.ico  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+
+## AUDIO
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+
+## Stencyl
+*.layout  binary
+*.scn     binary
+*.design  text

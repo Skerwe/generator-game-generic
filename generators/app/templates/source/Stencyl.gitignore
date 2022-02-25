@@ -1,0 +1,11 @@
+# Stencyl Workspace
+.hxcpp_cache
+games-generated
+logs
+prefs
+preview
+issues.xml
+
+# Stencyl Game
+.cache
+*.bak
