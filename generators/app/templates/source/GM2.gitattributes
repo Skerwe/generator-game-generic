@@ -1,0 +1,21 @@
+* text=auto
+
+## GRAPHICS
+*.bmp  binary
+*.gif  binary
+*.ico  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+
+## AUDIO
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+
+## GAME MAKER
+*.gml.dnd text
+*.gml     text
+*.json    text merge=json
+*.yyp     text merge=json
+*.yy      text merge=json
