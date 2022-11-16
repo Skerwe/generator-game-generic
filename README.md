@@ -2,7 +2,6 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/Skerwe/generator-game-generic/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-game-generic/actions/workflows/node.js.yml)
-[![Dependency Status][daviddm-image]][daviddm-url]
 [![Coverage percentage][coveralls-image]][coveralls-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
@@ -66,8 +65,6 @@ This project is licensed under the MIT License -- see the [LICENSE](LICENSE) fil
 
 [npm-image]: https://badge.fury.io/js/generator-game-generic.svg
 [npm-url]: https://npmjs.org/package/generator-game-generic
-[daviddm-image]: https://david-dm.org/Skerwe/generator-game-generic.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Skerwe/generator-game-generic
 [coveralls-image]: https://coveralls.io/repos/Skerwe/generator-game-generic/badge.svg
 [coveralls-url]: https://coveralls.io/r/Skerwe/generator-game-generic
 [snyk-image]: https://snyk.io/test/github/Skerwe/generator-game-generic/badge.svg
