@@ -27,6 +27,14 @@
 
 ```
 
+## Cloning the repository
+
+This project uses Git submodules, you will need to clone the project with the submodule:
+
+```bash
+git clone git@bitbucket.org:indiesagtewerke/codename-project-structure.git --recurse-submodules
+```
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-game-generic using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
