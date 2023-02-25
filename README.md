@@ -1,7 +1,7 @@
 # Generic Game Folder Structure Generator
 
 [![NPM version][npm-image]][npm-url]
-[![Node.js CI](https://github.com/Skerwe/generator-game-generic/actions/workflows/node.js.yml/badge.svg)](https://github.com/Skerwe/generator-game-generic/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/Skerwe/generator-game-generic/actions/workflows/npm-build-test.yml/badge.svg)](https://github.com/Skerwe/generator-game-generic/actions/workflows/npm-build-test.yml)
 [![Coverage percentage][coveralls-image]][coveralls-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 
