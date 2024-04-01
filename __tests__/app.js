@@ -1,79 +1,73 @@
-"use strict";
+import helpers from "yeoman-test";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const path = require("path");
-const assert = require("yeoman-assert");
-const helpers = require("yeoman-test");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-describe("generator game: prompting for appname", () => {
+describe("generator-game-generic test", () => {
   const componentName = "dummy-game";
-  let tempPath;
+  let runResult;
 
-  beforeAll(() =>
-    helpers
-      .run(path.join(__dirname, "../generators/app"))
-      .withPrompts({ appname: componentName })
-      .then((result) => {
-        tempPath = result.cwd;
-      })
-  );
+  describe("generator game: prompting for appname", () => {
+    beforeEach(async () => {
+      runResult = await helpers
+        .create(path.join(__dirname, "../generators/app"), {}, {})
+        .withAnswers({ appname: componentName })
+        .run();
+    });
 
-  it("created base project files", () => {
-    assert.file([
-      `${tempPath}/${componentName}/README.md`,
-      `${tempPath}/${componentName}/UNLICENSE`
-    ]);
+    afterEach(() => {
+      if (runResult) {
+        runResult.restore();
+      }
+    });
+
+    it("created base project files", () => {
+      runResult.assertFile(`${componentName}/README.md`);
+      runResult.assertFile(`${componentName}/UNLICENSE`);
+      runResult.assertFile(`${componentName}/.editorconfig`);
+      runResult.assertFile(`${componentName}/.gitignore`);
+      runResult.assertFile(`${componentName}/.gitattributes`);
+    });
+
+    it("created game project files", () => {
+      runResult.assertFile(`${componentName}/assets/README.md`);
+      runResult.assertFile(`${componentName}/docs/README.md`);
+      runResult.assertFile(`${componentName}/game/html5/README.md`);
+      runResult.assertFile(`${componentName}/game/README.md`);
+      runResult.assertFile(`${componentName}/source/README.md`);
+    });
   });
 
-  it("created base dot files", () => {
-    assert.file([
-      `${tempPath}/${componentName}/.editorconfig`,
-      `${tempPath}/${componentName}/.gitignore`,
-      `${tempPath}/${componentName}/.gitattributes`
-    ]);
-  });
+  describe("generator game: give appname through arguments", () => {
+    beforeEach(async () => {
+      runResult = await helpers
+        .create(path.join(__dirname, "../generators/app"), {}, {})
+        .withArguments(componentName)
+        .run();
+    });
 
-  it("created folder structure", () => {
-    assert.file([
-      `${tempPath}/${componentName}/assets/README.md`,
-      `${tempPath}/${componentName}/docs/README.md`,
-      `${tempPath}/${componentName}/game/html5/README.md`,
-      `${tempPath}/${componentName}/game/README.md`,
-      `${tempPath}/${componentName}/source/README.md`
-    ]);
-  });
-});
+    afterEach(() => {
+      if (runResult) {
+        runResult.restore();
+      }
+    });
 
-describe("generator game: give appname through arguments", () => {
-  const componentName = "dummy-game";
-  let tempPath;
+    it("created base project files", () => {
+      runResult.assertFile(`${componentName}/README.md`);
+      runResult.assertFile(`${componentName}/UNLICENSE`);
+      runResult.assertFile(`${componentName}/.editorconfig`);
+      runResult.assertFile(`${componentName}/.gitignore`);
+      runResult.assertFile(`${componentName}/.gitattributes`);
+    });
 
-  beforeAll(() =>
-    helpers
-      .run(path.join(__dirname, "../generators/app"))
-      .withArguments(componentName)
-      .then((result) => {
-        tempPath = result.cwd;
-      })
-  );
-
-  it("created base project files", () => {
-    assert.file([`${tempPath}/${componentName}/README.md`]);
-  });
-
-  it("created base dot files", () => {
-    assert.file([
-      `${tempPath}/${componentName}/.editorconfig`,
-      `${tempPath}/${componentName}/.gitignore`,
-      `${tempPath}/${componentName}/.gitattributes`
-    ]);
-  });
-
-  it("created folder structure", () => {
-    assert.file([
-      `${tempPath}/${componentName}/assets/README.md`,
-      `${tempPath}/${componentName}/docs/README.md`,
-      `${tempPath}/${componentName}/game/README.md`,
-      `${tempPath}/${componentName}/source/README.md`
-    ]);
+    it("created game project files", () => {
+      runResult.assertFile(`${componentName}/assets/README.md`);
+      runResult.assertFile(`${componentName}/docs/README.md`);
+      runResult.assertFile(`${componentName}/game/html5/README.md`);
+      runResult.assertFile(`${componentName}/game/README.md`);
+      runResult.assertFile(`${componentName}/source/README.md`);
+    });
   });
 });
