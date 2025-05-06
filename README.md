@@ -15,8 +15,6 @@
 │   ├── cordova/
 │   ├── html5/
 │   ├── linux/
-│   ├── nwjs/
-│   ├── scirra-arcade/
 │   └── windows/
 ├── source/
 ├── .editorconfig
@@ -32,7 +30,13 @@
 This project uses Git submodules, you will need to clone the project with the submodule:
 
 ```bash
-git clone git@bitbucket.org:indiesagtewerke/codename-project-structure.git --recurse-submodules
+git clone https://github.com/Skerwe/generator-game-generic.git --recurse-submodules
+```
+
+Updating the submodule to the latest code:
+
+```bash
+git submodule update --remote --merge
 ```
 
 ## Installation
